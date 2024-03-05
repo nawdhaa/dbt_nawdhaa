@@ -6,10 +6,10 @@ sources:
       - name: sales 
         identifier: raw_gz_sales 
         description: sales of greenweez
-          tests:
-          - unique:
-              column_name: "(orders_id || '' || pdt_id)" 
-          -- not_null    
+            tests:
+             - unique:
+                    column_name: "(orders_id || '' || pdt_id)" 
+             - not_null    
       - name : product
         identifier: raw_gz_product 
         description: product info of greenweez
